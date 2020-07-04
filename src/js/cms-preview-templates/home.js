@@ -3,7 +3,7 @@ import format from "date-fns/format";
 
 import Jumbotron from "./components/jumbotron";
 
-export const PostPreview = ({entry, getAsset, widgetFor}) => {
+export const HomePreview = ({entry, getAsset, widgetFor}) => {
   let image = getAsset(entry.getIn(["data", "image"]));
 
     // Bit of a nasty hack to make relative paths work as expected as a background image here
@@ -22,7 +22,7 @@ export const PostPreview = ({entry, getAsset, widgetFor}) => {
                 </h1>
                 </div>
                 <div className="mw7 relative bg-fix-primary">
-                {subtitle && <p className="b f4 di lh-title mb3 white mw6 bg-primary">{ entry.getIn(["data", "subtitle"]) }</p>}
+                {<p className="b f4 di lh-title mb3 white mw6 bg-primary">{ entry.getIn(["data", "subtitle"]) }</p>}
                 </div>
             </div>
                 <div className="center mw6 pv3">

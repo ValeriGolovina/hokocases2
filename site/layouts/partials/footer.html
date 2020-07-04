@@ -1,11 +1,10 @@
-<footer class="bg-black ph3 pv4 white">
+<footer class="bg-grey3 ph3 pv4 white">
 
-	<div class="mw7 center pt3">
-		<div class="flex-ns justify-between">
-
+	<div class="mw7 center">
 			<div>
-				<h3 class="f4 b lh-title mb2 primary">Social media</h3>
+				<h3 class="f4 b lh-title mb2 primary">Ждем Вас!</h3>
 				<ul class="mhn2">
+					{{ partial "social-icon" (dict "link" "#" "svg" "icons-facebook") }}
 					{{ partial "social-icon" (dict "link" "https://www.instagram.com/hoko.cases/?igshid=16y2aauw43au4" "svg" "icons-instagram") }}
 				</ul>
 			</div>
@@ -15,5 +14,6 @@
 
 </footer>
 
+{{ partial "svg" . }}
 
 <script src="/app.js"></script>
