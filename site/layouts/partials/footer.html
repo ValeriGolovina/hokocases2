@@ -1,17 +1,19 @@
-<footer class="bg-grey3 ph3 pv4 white">
-
-	<div class="mw7 center">
-			<div>
-				<h3 class="f4 b lh-title mb2 primary">Ждем Вас!</h3>
-				<ul class="mhn2">
-					{{ partial "social-icon" (dict "link" "#" "svg" "icons-facebook") }}
-					{{ partial "social-icon" (dict "link" "https://www.instagram.com/hoko.cases/?igshid=16y2aauw43au4" "svg" "icons-instagram") }}
-				</ul>
-			</div>
-
-		</div>
+<footer class="bg-grey-1 ph3 pv3 white flex justify-around flex-column flex-row-ns items-center ">
+	<div class="mw7">
+		<h3 class="f4 b lh-title mb2 primary">Ждем Вас!</h3>
+		<ul class="mhn2">
+			{{ partial "social-icon" (dict "link" "#" "svg" "icons-facebook") }}
+			{{ partial "social-icon" (dict "link" "https://www.instagram.com/hoko.cases/?igshid=16y2aauw43au4" "svg" "icons-instagram") }}
+		</ul>
 	</div>
+	<div class="overflow-x-scroll overflow-x-visible-ns relative">
 
+        <!-- Logo -->
+        <a href="/" class="db mr4 h-100 w4">
+            <img src="/img/logo.png" alt="logo" class="br0 db mb0 w-100 center"/>
+        </a>
+    
+	</div>
 </footer>
 
 {{ partial "svg" . }}
