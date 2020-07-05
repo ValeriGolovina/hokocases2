@@ -1,7 +1,6 @@
 import React from "react";
 import format from "date-fns/format";
 
-import Jumbotron from "./components/jumbotron";
 
 export const HomePreview = ({entry, getAsset, widgetFor}) => {
   let image = getAsset(entry.getIn(["data", "image"]));
@@ -17,15 +16,15 @@ export const HomePreview = ({entry, getAsset, widgetFor}) => {
             <div className="mw7 center ph3 pv3">
             <div className="db">
                 <div className="mw7 relative bg-fix-primary mb3">
-                <h1 className="f2 f1-l b di lh-title mb3 white mw6 bg-primary center">
+                <h1 className="f2 f1-l b di lh-title mb3 mw6 primary center">
                     { entry.getIn(["data", "title"]) }
                 </h1>
                 </div>
                 <div className="mw7 relative bg-fix-primary">
-                <p className="b f4 di lh-title mb3 white mw6 center">{ entry.getIn(["data", "subtitle"]) }</p>
+                <p className="b f4 di lh-title mb3 primary mw6 center">{ entry.getIn(["data", "subtitle"]) }</p>
                 </div>
             </div>
-                <div className="center mw6 pv3">
+                <div className="center mw6">
                     { widgetFor("body") }
                 </div>
             </div>
